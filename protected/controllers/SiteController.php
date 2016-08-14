@@ -29,7 +29,8 @@ class SiteController extends Controller
 	{
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-		$this->render('index');
+	
+            $this->render('index');
 	}
 
 	/**
@@ -79,6 +80,8 @@ class SiteController extends Controller
 	{
 		$model=new LoginForm;
                 $user = new User;
+
+                 
 
 		// if it is ajax validation request
 		if(isset($_POST['ajax']) && $_POST['ajax']==='login-form')

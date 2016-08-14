@@ -907,3 +907,104 @@ Stack trace:
 #7 {main}
 REQUEST_URI=/index.php?r=site/ConfirmChangePassword
 ---
+2016/08/13 14:55:48 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'eportal.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2016/08/13 17:00:12 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'eportal.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2016/08/13 17:09:09 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'eportal.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2016/08/13 17:20:36 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'eportal.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2016/08/13 17:44:35 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'eportal.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2016/08/13 18:30:14 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'eportal.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2016/08/13 18:30:16 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1075 Incorrect table definition; there can be only one auto column and it must be defined as a key. The SQL statement executed was: CREATE TABLE `tbl_test` (
+	`id` int auto_increment,
+	`name` text,
+	`sum_income` int,
+	`date_income` timestamp
+).
+2016/08/13 18:30:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1075 Incorrect table definition; there can be only one auto column and it must be defined as a key. The SQL statement executed was: CREATE TABLE `tbl_test` (
+	`id` int auto_increment,
+	`name` text,
+	`sum_income` int,
+	`date_income` timestamp
+)' in C:\WebServers\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\db\CDbCommand.php:358
+Stack trace:
+#0 C:\WebServers\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\db\CDbCommand.php(1352): CDbCommand->execute()
+#1 C:\WebServers\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\db\CDbMigration.php(250): CDbCommand->createTable('tbl_test', Array, NULL)
+#2 C:\WebServers\home\e-portal-Yii-1.loc\www\protected\migrations\m160813_105047_interaction_with_bd.php(13): CDbMigration->createTable('tbl_test', Array)
+#3 C:\WebServers\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\cli\commands\MigrateCommand.php(415): m160813_105047_interaction_with_bd->up()
+#4 C:\WebServers\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\cli\commands\MigrateCommand.php(109): MigrateCommand->migrateUp('m160813_105047_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 C:\WebServers\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 C:\WebServers\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 C:\WebServers\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 C:\WebServers\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\base\CApplication.php(185): CConsoleApplication->processRequest()
+#10 C:\WebServers\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\yiic.php(33): CApplication->run()
+#11 C:\WebServers\home\e-portal-Yii-1.loc\www\protected\yiic.php(7): require_once('C:\WebServers\h...')
+#12 {main}
+---
+2016/08/13 18:33:53 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'eportal.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2016/08/13 18:33:55 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1075 Incorrect table definition; there can be only one auto column and it must be defined as a key. The SQL statement executed was: CREATE TABLE `tbl_test` (
+	`id` int(11) NOT NULL AUTO_INCREMENT,
+	`name` text,
+	`sum_income` int,
+	`date_income` timestamp
+).
+2016/08/13 18:33:55 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1075 Incorrect table definition; there can be only one auto column and it must be defined as a key. The SQL statement executed was: CREATE TABLE `tbl_test` (
+	`id` int(11) NOT NULL AUTO_INCREMENT,
+	`name` text,
+	`sum_income` int,
+	`date_income` timestamp
+)' in C:\WebServers\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\db\CDbCommand.php:358
+Stack trace:
+#0 C:\WebServers\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\db\CDbCommand.php(1352): CDbCommand->execute()
+#1 C:\WebServers\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\db\CDbMigration.php(250): CDbCommand->createTable('tbl_test', Array, NULL)
+#2 C:\WebServers\home\e-portal-Yii-1.loc\www\protected\migrations\m160813_105047_interaction_with_bd.php(13): CDbMigration->createTable('tbl_test', Array)
+#3 C:\WebServers\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\cli\commands\MigrateCommand.php(415): m160813_105047_interaction_with_bd->up()
+#4 C:\WebServers\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\cli\commands\MigrateCommand.php(109): MigrateCommand->migrateUp('m160813_105047_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 C:\WebServers\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 C:\WebServers\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 C:\WebServers\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 C:\WebServers\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\base\CApplication.php(185): CConsoleApplication->processRequest()
+#10 C:\WebServers\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\yiic.php(33): CApplication->run()
+#11 C:\WebServers\home\e-portal-Yii-1.loc\www\protected\yiic.php(7): require_once('C:\WebServers\h...')
+#12 {main}
+---
+2016/08/13 18:39:56 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'eportal.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2016/08/13 18:41:39 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'eportal.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2016/08/13 18:55:21 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'eportal.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2016/08/13 18:56:15 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'eportal.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2016/08/13 18:57:36 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'eportal.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2016/08/13 18:58:16 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'eportal.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2016/08/13 20:08:48 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), '?? ?????? ?????...')
+#1 Z:\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\web\CWebApplication.php(141): CWebApplication->runController('TblTest/admin')
+#9 Z:\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\base\CApplication.php(185): CWebApplication->processRequest()
+#10 Z:\home\e-portal-Yii-1.loc\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=TblTest/admin
+HTTP_REFERER=http://e-portal-yii-1.loc/index.php?r=site/login
+---
+2016/08/13 20:10:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), '?? ?????? ?????...')
+#1 Z:\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\web\CWebApplication.php(141): CWebApplication->runController('tblTest/admin')
+#9 Z:\home\e-portal-Yii-1.loc\www\Yii_fw_1_1_17\base\CApplication.php(185): CWebApplication->processRequest()
+#10 Z:\home\e-portal-Yii-1.loc\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=tblTest/admin
+HTTP_REFERER=http://e-portal-yii-1.loc/index.php?r=site/login
+---

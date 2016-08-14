@@ -32,6 +32,7 @@
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'Главная страница', 'url'=>array('/site/index')),
+				array('label'=>'Таблица Test', 'url'=>array('/tblTest/admin')),
                                 array('label'=>'Настройки профиля', 'url'=>array('/Users/default/settings')),
 				//array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
 				//array('label'=>'Contact', 'url'=>array('/site/contact')),
